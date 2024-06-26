@@ -16,11 +16,25 @@
 ###############################################################################
 #####################  Solve  #####################
 
+# def divisibleSumPairs(n, k, ar):
+#   count = 0
+#   for i in range(n):
+#     j = i + 1
+#     while j < n:
+#       nSum = ar[i] + ar[j]
+#       if nSum % k == 0:
+#         count += 1
+#       #   print(f'{ar[i]} + {ar[j]} = {nSum}: Yes')
+#       #   print(f'Total count now = {count}')
+#       # else:
+#       #   print(f'{ar[i]} + {ar[j]} = {nSum}: No')
+#       j += 1
+#   return count
+
 def divisibleSumPairs(n, k, ar):
   count = 0
   for i in range(n):
-    j = i + 1
-    while j < n:
+    for j in range(i + 1, n):
       nSum = ar[i] + ar[j]
       if nSum % k == 0:
         count += 1
@@ -28,7 +42,6 @@ def divisibleSumPairs(n, k, ar):
       #   print(f'Total count now = {count}')
       # else:
       #   print(f'{ar[i]} + {ar[j]} = {nSum}: No')
-      j += 1
   return count
 
 

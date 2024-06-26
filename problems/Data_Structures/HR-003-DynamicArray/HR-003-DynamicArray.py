@@ -1,3 +1,5 @@
+import os
+
 # HackerRank - Data Structures
 # Dynamic Array
 # By Douglas Horville
@@ -52,8 +54,8 @@ def dynamicArray(n, queries):
 #########  Main  #########
 
 def main():
-
-    input_file_path = './problems/Data_Structures/HR-003-DynamicArray/test/DS-003-input.txt'
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    input_file_path = os.path.join(script_dir, 'test', 'DS-003-input.txt')
 
     ourFile = open(input_file_path, "r")
     firstMultipleInput = ourFile.readline().rstrip().split()
