@@ -52,7 +52,9 @@ def breakingRecords(scores):
 #####################  Main  #####################
 
 def main():
-  inputFile = open('./test/026-out.txt', 'r')
+  input_file_path = './problems/Algorithms/HR-014-BreakingTheRecords/test/A-014-input.txt'
+
+  inputFile = open(input_file_path, 'r')
   content = inputFile.readlines()
   inputFile.close()
 

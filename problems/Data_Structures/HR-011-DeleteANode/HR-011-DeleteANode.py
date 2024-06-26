@@ -99,7 +99,9 @@ def deleteNode(llist, position):
 ###########  Main ###########
 
 def main():
-  inputFile = open('./test/023-out.txt', 'r')
+  input_file_path = './problems/Data_Structures/HR-011-DeleteANode/test/DS-011-input.txt'
+
+  inputFile = open(input_file_path, 'r')
   content = inputFile.read().split('---')
   inputFile.close()
 

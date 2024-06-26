@@ -1,4 +1,4 @@
-# HackerRank - Algorithms
+# HackerRank - Data Structures
 # Sparse Arrays
 # By Douglas Horville
 

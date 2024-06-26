@@ -1,4 +1,4 @@
-# HackerRank
+# HackerRank - Algorithms
 # Number Line Jumps
 # By Kris & Doug
 

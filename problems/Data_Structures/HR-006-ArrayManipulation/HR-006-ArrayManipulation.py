@@ -1,4 +1,4 @@
-# HackerRank - Algorithms
+# HackerRank - Data Structures
 # Array Manipulation
 # By Douglas Horville
 

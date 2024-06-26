@@ -1,4 +1,4 @@
-# HackerRank - Algorithms
+# HackerRank - Data Structures
 # Left Rotation
 # By Douglas Horville
 

@@ -52,8 +52,12 @@ def dynamicArray(n, queries):
 #########  Main  #########
 
 def main():
-    ourFile = open("./test/008-out.txt", "r")
+
+    input_file_path = './problems/Data_Structures/HR-003-DynamicArray/test/DS-003-input.txt'
+
+    ourFile = open(input_file_path, "r")
     firstMultipleInput = ourFile.readline().rstrip().split()
+
     n = int(firstMultipleInput[0])
     q = int(firstMultipleInput[1])
 
@@ -68,4 +72,3 @@ def main():
 
 
 main()
-

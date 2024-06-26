@@ -68,7 +68,9 @@ def reversePrint(llist):
 ###########  Main ###########
 
 def main():
-    inputFile = open('./test/024-out.txt', 'r')
+    input_file_path = './problems/Data_Structures/HR-012-PrintInReverse/test/DS-012-input.txt'
+
+    inputFile = open(input_file_path, 'r')
     content = inputFile.read().split()
     inputFile.close()
 

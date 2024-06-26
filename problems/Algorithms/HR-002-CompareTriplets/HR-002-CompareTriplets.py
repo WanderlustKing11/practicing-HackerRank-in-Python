@@ -1,4 +1,4 @@
-# HackerRank - Data Structures
+# HackerRank - Algorithms
 # Compare the Triplets
 # By Douglas Horville
 

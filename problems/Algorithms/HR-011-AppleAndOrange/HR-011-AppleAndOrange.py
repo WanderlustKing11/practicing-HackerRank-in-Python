@@ -63,7 +63,9 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
 ###########  Main  ###########
 
 def main():
-  outFile = open('./test/022-out.txt', 'r')
+  input_file_path = './problems/Algorithms/HR-011-AppleAndOrange/test/A-011-input.txt'
+
+  outFile = open(input_file_path, 'r')
   content = outFile.readlines()
   outFile.close()
 
