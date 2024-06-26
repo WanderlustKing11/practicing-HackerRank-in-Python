@@ -22,6 +22,7 @@
 
 ###############################################################################
 #####################  Solve  #####################
+import os
 
 def breakingRecords(scores):
   records = {
@@ -52,7 +53,8 @@ def breakingRecords(scores):
 #####################  Main  #####################
 
 def main():
-  input_file_path = './problems/Algorithms/HR-014-BreakingTheRecords/test/A-014-input.txt'
+  script_dir = os.path.dirname(os.path.abspath(__file__))
+  input_file_path = os.path.join(script_dir, 'test', 'A-014-input.txt')
 
   inputFile = open(input_file_path, 'r')
   content = inputFile.readlines()

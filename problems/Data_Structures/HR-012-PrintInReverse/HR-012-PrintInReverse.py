@@ -45,6 +45,7 @@ def print_singly_linked_list(node, sep):
 
 ###############################################################
 ###########  Solve  ###########
+import os
 
 def reversePrint(llist):
     # Write your code here
@@ -68,7 +69,8 @@ def reversePrint(llist):
 ###########  Main ###########
 
 def main():
-    input_file_path = './problems/Data_Structures/HR-012-PrintInReverse/test/DS-012-input.txt'
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    input_file_path = os.path.join(script_dir, 'test', 'DS-012-input.txt')
 
     inputFile = open(input_file_path, 'r')
     content = inputFile.read().split()

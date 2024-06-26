@@ -34,6 +34,7 @@
 
 #############################################################################
 ###########  Solution  ###########
+import os
 
 def countApplesAndOranges(s, t, a, b, apples, oranges):
   apple_count = 0
@@ -63,7 +64,8 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
 ###########  Main  ###########
 
 def main():
-  input_file_path = './problems/Algorithms/HR-011-AppleAndOrange/test/A-011-input.txt'
+  script_dir = os.path.dirname(os.path.abspath(__file__))
+  input_file_path = os.path.join(script_dir, 'test', 'A-011-input.txt')
 
   outFile = open(input_file_path, 'r')
   content = outFile.readlines()

@@ -69,7 +69,7 @@ def print_singly_linked_list(node, sep, fptr):
 
 ###############################################################
 ###########  Solve  ###########
-
+import os
 
 def deleteNode(llist, position):
   if llist == None:
@@ -99,7 +99,8 @@ def deleteNode(llist, position):
 ###########  Main ###########
 
 def main():
-  input_file_path = './problems/Data_Structures/HR-011-DeleteANode/test/DS-011-input.txt'
+  script_dir = os.path.dirname(os.path.abspath(__file__))
+  input_file_path = os.path.join(script_dir, 'test', 'DS-011-input.txt')
 
   inputFile = open(input_file_path, 'r')
   content = inputFile.read().split('---')
