@@ -1,5 +1,5 @@
 # HackerRank - Algorithms
-# Subarray Division
+# Divisible Sum Pairs
 # By Douglas Horville
 
 # Given an array of integers and a positive integer k, determine the number of 
