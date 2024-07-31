@@ -13,6 +13,7 @@
 
 ###############################################################
 ###########  Solve  ###########
+
 import os
 
 def migratoryBirds(arr):
@@ -40,6 +41,7 @@ def migratoryBirds(arr):
 
 ###############################################################
 ###########  Main ###########
+
 def main():
   script_dir = os.path.dirname(os.path.abspath(__file__))
   input_file_path = os.path.join(script_dir, 'test', 'A-017-input.txt')
@@ -52,11 +54,11 @@ def main():
     for case in test_cases:
       lines = case.split('\n')
       n = int(lines[0].strip())
-      arr = list(map(int, lines[1].strip().split()))
-      if n != len(arr):
+      ar = list(map(int, lines[1].strip().split()))
+      if n != len(ar):
         print("Error: Given input length doesn't match given input list")
       else:
-        print(migratoryBirds(arr))
+        print(migratoryBirds(ar))
 
 if __name__ == '__main__':
   main()
