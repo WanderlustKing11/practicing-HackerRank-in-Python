@@ -51,7 +51,6 @@ def countingValleys(steps, path):
         stack.pop()
     print(f'Stack = {stack}, sea_level = {sea_level}, num_of_Valleys = {num_of_valleys}')
     return num_of_valleys
-  # return num_of_valleys
 
 
 ###############################################################
