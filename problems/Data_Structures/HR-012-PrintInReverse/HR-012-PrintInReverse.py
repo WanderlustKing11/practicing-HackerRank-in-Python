@@ -48,21 +48,21 @@ def print_singly_linked_list(node, sep):
 import os
 
 def reversePrint(llist):
-    # Write your code here
     if llist is None:
         return None
     
     prev = None
     current = llist
-    next = None
+    next_node = None
 
-    while current != None:
-        next = current.next   # Step 1: Store the next node
+    while current is not None:
+        next_node = current.next   # Step 1: Store the next node
         current.next = prev   # Step 2: Reverse the current node's pointer
         prev = current        # Step 3: Move prev to current
-        current = next        # Step 4: Move current to next
+        current = next_node        # Step 4: Move current to next
 
-    return prev
+    print_singly_linked_list(prev, '\n')
+    print()
 
 
 ###############################################################
@@ -89,11 +89,9 @@ def main():
     print_singly_linked_list(llist.head, ' -> ')
     print('\n')
 
-    llist.head = reversePrint(llist.head)
-
     print("Reversed list:")
+    llist.head = reversePrint(llist.head)
     print_singly_linked_list(llist.head, ' -> ')
-    print('\n')
     print('='*40)
 
 main()
