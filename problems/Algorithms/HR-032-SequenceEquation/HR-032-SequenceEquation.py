@@ -15,35 +15,29 @@
 ###########  Solve  ###########
 
 def permutationEquation(p):
-    y_history_array = [0] * len(p)
-    y_index_table = {}
-    for i in range(len(p)):
-        # print(f'i = {i}')
-        x = p[i]
-        # print(f'x = {x}')
-        for y in range(len(p)):
-            if p[y] == i + 1:
-                # print(f'y = {y}, p[y] = {p[y]}, and i + 1 = {i + 1}')
-                y_index_table[y] = x 
-                # print(y_index_table)
+    result = []
+    position_map = {}
     
-    for y_key in y_index_table:
-        y_history_array[y_key] = y_index_table[y_key]
-        # print(y_index_table[y_key])
+    # Fill dictionary with x values and their 1-based index
+    for i in range(len(p)):
+        position_map[p[i]] = i + 1
 
+    # Loop through the map for x's position1 to find position 2 (y)
+    for x in range(1, len(p) + 1):
+        pos1 = position_map[x]
+        pos2 = position_map[pos1]
+        result.append(pos2)
 
-    # print(y_index_table)
-    # print()
-    return y_history_array
+    return result
 
 
 ###############################################################
 ###########  Main ###########
 
 def main():
-  print(permutationEquation([5,2,1,3,4])) # expected output: [4,2,5,1,3]
-  print(permutationEquation([2,3,1])) # expected output: [2,3,1]
-  print(permutationEquation([4,3,5,1,2])) # expected output: [1,3,5,4,2]
+    print(permutationEquation([5,2,1,3,4])) # expected output: [4,2,5,1,3]
+    print(permutationEquation([2,3,1])) # expected output: [2,3,1]
+    print(permutationEquation([4,3,5,1,2])) # expected output: [1,3,5,4,2]
 
 main()
 
