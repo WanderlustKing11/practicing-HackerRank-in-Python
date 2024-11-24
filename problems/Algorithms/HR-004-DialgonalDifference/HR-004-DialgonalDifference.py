@@ -5,6 +5,10 @@
 # Given a square matrix, calculate the absolute difference between the sums of its diagonals.
 
 
+###############################################################
+###########  Solve  ###########
+
+
 def diagonalDifference(arr):
     [primary_d, i , j] = [0, 0, 0]
     while i < len(arr):      # loop through all the rows
@@ -23,7 +27,11 @@ def diagonalDifference(arr):
     return result
 
 
+###############################################################
+###########  Main ###########
+
 def main():
-    print(diagonalDifference([[11, 2, 4], [4, 5, 6], [10, 8, -12]]))
+    # print(diagonalDifference([[11, 2, 4], [4, 5, 6], [10, 8, -12]]))
+    print(practice([[11, 2, 4], [4, 5, 6], [10, 8, -12]]))
 
 main()
